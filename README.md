@@ -7,7 +7,7 @@ EC2 Management Commands
 # command: create-instance
 python cli.py ec2 create: Create a new EC2 instance.
 
-# Options:
+ Options:
 --type: Type of EC2 instance.
 --ami: AMI ID for the EC2 instance (default from config).
 --subnet: Subnet ID for the EC2 instance (default from config).
@@ -15,13 +15,13 @@ python cli.py ec2 create: Create a new EC2 instance.
 python cli.py ec2 start: Start an EC2 instance.
 
 # command: stop-instance
-# Options:
+ Options:
 --name: Name of the EC2 instance.
 --instance-id: ID of the EC2 instance.
 python cli.py ec2 stop: Stop an EC2 instance.
 
 # command: list-instances
-# Options:
+ Options:
 --name: Name of the EC2 instance.
 --instance-id: ID of the EC2 instance.
 python cli.py ec2 list_instances: List all EC2 instances.
@@ -31,13 +31,13 @@ python cli.py ec2 list_instances: List all EC2 instances.
 # command: create-bucket
 python cli.py s3 create: Create a new S3 bucket.
 
-# Options:
+ Options:
 --name: Name of the S3 bucket.
 --public/--private: Specify if the bucket should be public or private.
 python cli.py s3 upload: Upload a file to an S3 bucket.
 
 # command: list-buckets
-# Options:
+ Options:
 --bucket: Name of the S3 bucket.
 --file: Path to the file to upload.
 python cli.py s3 list: List all S3 buckets created by you.
