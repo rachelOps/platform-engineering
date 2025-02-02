@@ -6,9 +6,9 @@
   "instance_types": ["t3.nano", "t4g.nano"],
   "default_ami": "ubuntu",
   "default_subnet_id": "subnet-01ec443072fef30fc",
-  "default_vpc_id": "vpc-0ab66f0e22f38941e",
+  "default_vpc_id": "vpc-0fb922643dc79c601",
   "max_running_instances": 2,
   "username_tag_key": "CreatedByCLIUser",
-  "username": "RachelZamir",
+  "username": "rachelops",
   "default_region": "us-east-1"
 }
