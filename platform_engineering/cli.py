@@ -18,7 +18,8 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Load configuration
-config_path = 'var/lib/jenkins/workspace/pip/platform-engineering/platform_engineering/config.json'
+# Load configuration
+config_path = 'var/lib/jenkins/workspace/pip/platform-engineering'
 print(f"Absolute path to config.json: {os.path.abspath(config_path)}")
 
 with open(config_path) as config_file:
