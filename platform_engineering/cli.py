@@ -4,6 +4,7 @@ from plat_manager import EC2Manager
 import json
 from s3_manager import S3Manager
 from route53_manager import Route53Manager
+import os
 
 
 # Configure logging
@@ -17,7 +18,10 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Load configuration
-with open('platform-engineering/platform_engineering/config.json') as config_file:
+config_path = 'var/lib/jenkins/workspace/pip/platform-engineering/platform_engineering/config.json'
+print(f"Absolute path to config.json: {os.path.abspath(config_path)}")
+
+with open(config_path) as config_file:
     config = json.load(config_file)
 
 default_ami = config.get('default_ami', 'ubuntu')
