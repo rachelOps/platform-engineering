@@ -14,7 +14,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Load configuration
-with open('config.json') as config_file:
+with open('/var/lib/jenkins/workspace/pip/platform-engineering/platform_engineering/config.json') as config_file:
     config = json.load(config_file)
 
 
